@@ -1,0 +1,12 @@
+{
+  "user": [
+    {
+      "name": "Navjot Singh",
+      "email": "enridise@gmail.com",
+      "password": "@123Papa",
+      "re_password": "@123Papa",
+      "agreeTerm": true,
+      "id": 1
+    }
+  ]
+}
