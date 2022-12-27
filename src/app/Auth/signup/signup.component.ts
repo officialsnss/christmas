@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import Validation from '../../utils/validation';
+import * as CryptoJS from 'crypto-js';
 
 @Component({
   selector: 'app-signup',
@@ -58,6 +59,8 @@ export class SignupComponent implements OnInit {
       return;
     }
   }
+
+  pass = CryptoJS.AES.encrypt(this.form.value.password, "mypassword").toString();
   
 
   onSubmit(): void {
@@ -80,3 +83,7 @@ export class SignupComponent implements OnInit {
   }
 
 }
+function encrypt(value: any): any {
+  throw new Error('Function not implemented.');
+}
+
