@@ -16,6 +16,7 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
 import { LoginComponent } from './Auth/login/login.component';
 import { SignupComponent } from './Auth/signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashoardComponent } from './dashoard/dashoard.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     NewsletterComponent,
     LoginComponent,
     SignupComponent,
+    DashoardComponent,
   ],
   imports: [
     BrowserModule,
